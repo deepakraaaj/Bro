@@ -173,6 +173,8 @@ def matched(text):
         return ["media"]                                  # bare "play it" = resume, not a search
     if "media" not in groups and re.search(r"\b(back|ahead)\b.*\b(seconds?|secs?|minutes?|mins?)\b", t):
         groups.append("media")                            # "back 1 minute 30 seconds"
+    if "open" in groups and "search" in groups and re.match(r"\s*(?:open|launch|start)\b", t):
+        groups.remove("search")                           # "open google chrome" is the app, not a search
     if "close" in groups and "open" in groups:           # "close the rest and keep terminal open"
         groups.remove("open")
     if "info" in groups and [w for w in re.findall(r"[a-z']+", core) if w not in INFO_FILLER | set(TRIGGERS["info"])]:
