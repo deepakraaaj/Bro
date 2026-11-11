@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.wav
+.venv/
+venv/
+
+# Local files that are not part of the app
+needle_demo.py
+needle_indicator.py

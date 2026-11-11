@@ -1,0 +1,21 @@
+# Runs Bro as a background service for your user. Install: see README.md ("Start at login").
+# Paths assume the repo is cloned to ~/Bro with its virtualenv in ~/Bro/.venv; change them if not.
+[Unit]
+Description=Bro hands-free voice assistant
+After=graphical-session.target pipewire.service wireplumber.service
+PartOf=graphical-session.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+# The loop reports in every few seconds; if it goes silent for 7 minutes (a hang), systemd restarts it.
+WatchdogSec=420
+TimeoutStartSec=120
+WorkingDirectory=%h/Bro
+Environment=HF_HUB_OFFLINE=1 CACTUS_TELEMETRY=0
+ExecStart=%h/Bro/.venv/bin/python -u voice_assistant_v2.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,8 @@
+# Python 3.12+ (tested on 3.14). Install into a virtualenv: see README.md.
+cactus-compute==4.1.0      # Needle 26M tool-calling model (picks an action for ambiguous commands)
+SpeechRecognition==3.17.0  # client for Google's free speech-to-text
+piper-tts==1.8.0           # offline neural voice
+onnxruntime==1.31.1
+numpy==2.5.4
+openwakeword==0.6.0        # offline "Hey Jarvis" detection (hands-free mode only)
+jeepney==0.9.0             # D-Bus: top-bar button, keyboard/mouse through the desktop portal

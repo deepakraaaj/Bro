@@ -1,0 +1,1764 @@
+[
+ {
+  "said": "turn on bluetooth and connect to cmf",
+  "reply": "Bluetooth on. Connected to CMF Neckband Pro",
+  "runs": [
+   "bluetoothctl power on",
+   "rfkill unblock bluetooth",
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:02"
+  ]
+ },
+ {
+  "said": "connect to internet which is best speed",
+  "reply": "Connected to OFFICENET, signal 100 percent",
+  "runs": [
+   "nmcli device wifi connect 02:00:00:00:01:01"
+  ]
+ },
+ {
+  "said": "connect to galaxy's wifi",
+  "reply": "Connected to Galaxy A55 5G, signal 100 percent",
+  "runs": [
+   "nmcli device wifi connect 11:22:33:44:55:66"
+  ]
+ },
+ {
+  "said": "connect to officenet guest",
+  "reply": "OFFICENET_GUEST needs a password. Connect to it once from Settings and I'll remember it.",
+  "runs": []
+ },
+ {
+  "said": "connect to cafe free",
+  "reply": "Connected to Cafe Free, signal 80 percent",
+  "runs": [
+   "nmcli device wifi connect AA:BB:CC:DD:EE:00"
+  ]
+ },
+ {
+  "said": "connect to home fiber wifi",
+  "reply": "Home_Fiber isn't in range right now. Is it switched on?",
+  "runs": []
+ },
+ {
+  "said": "connect to starbucks wifi",
+  "reply": "I can't find a network called starbucks. Nearby I see OFFICENET, Galaxy A55 5G, OFFICENET_GUEST or Cafe Free.",
+  "runs": []
+ },
+ {
+  "said": "open settings",
+  "reply": "Opening Settings",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Settings"
+  ]
+ },
+ {
+  "said": "open postman",
+  "reply": "Opening Postman",
+  "runs": [
+   "LAUNCH gtk-launch postman_postman"
+  ]
+ },
+ {
+  "said": "open camera",
+  "reply": "Opening Camera",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Snapshot"
+  ]
+ },
+ {
+  "said": "open terminal",
+  "reply": "Opening Terminal",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Ptyxis"
+  ]
+ },
+ {
+  "said": "open reddit",
+  "reply": "Opening reddit",
+  "runs": [
+   "LAUNCH xdg-open https://reddit.com"
+  ]
+ },
+ {
+  "said": "open youtube in brave",
+  "reply": "Opening youtube in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://youtube.com"
+  ]
+ },
+ {
+  "said": "open github in firefox",
+  "reply": "Opening github in Firefox",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://github.com"
+  ]
+ },
+ {
+  "said": "open my secret project folder",
+  "reply": "I couldn't find an app called secret project folder",
+  "runs": []
+ },
+ {
+  "said": "connect to cmf headphone",
+  "reply": "Connected to CMF Neckband Pro",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:02"
+  ]
+ },
+ {
+  "said": "open text editor",
+  "reply": "Opening Text Editor",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.TextEditor"
+  ]
+ },
+ {
+  "said": "log the videos that are playing in my youtube",
+  "reply": "Logged Don't Stop Me Now (Live)",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.TextEditor /tmp/needle-test-youtube-log.md"
+  ]
+ },
+ {
+  "said": "log the videos that are playing",
+  "reply": "Don't Stop Me Now (Live) is already logged",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.TextEditor /tmp/needle-test-youtube-log.md"
+  ]
+ },
+ {
+  "said": "connect to cms headphone",
+  "reply": "Connected to CMF Neckband Pro",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:02"
+  ]
+ },
+ {
+  "said": "connect my oneplus buds",
+  "reply": "Connected to OnePlus Nord Buds 2r",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:05"
+  ]
+ },
+ {
+  "said": "connect my oneplus",
+  "reply": "I found OnePlus Bullets Wireless Z2 and OnePlus Nord Buds 2r. Which one should I connect?",
+  "runs": [
+   "bluetoothctl power on"
+  ]
+ },
+ {
+  "said": "bullets",
+  "reply": "Connected to OnePlus Bullets Wireless Z2",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:04"
+  ]
+ },
+ {
+  "said": "connect headphones",
+  "reply": "I found CMF Neckband Pro, Airdopes 141 Elite ANC, Rockerz 430 and OnePlus Nord Buds 2r, and 1 more. Which one should I connect?",
+  "runs": [
+   "bluetoothctl power on"
+  ]
+ },
+ {
+  "said": "disconnect bluetooth",
+  "reply": "Disconnected Bluetooth devices",
+  "runs": [
+   "bluetoothctl disconnect"
+  ]
+ },
+ {
+  "said": "increase volume",
+  "reply": "Volume 69 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 69%"
+  ]
+ },
+ {
+  "said": "increase volume by 20",
+  "reply": "Volume 79 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 79%"
+  ]
+ },
+ {
+  "said": "set volume to 150",
+  "reply": "Volume 100 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 100%"
+  ]
+ },
+ {
+  "said": "turn the volume down",
+  "reply": "Volume 49 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 49%"
+  ]
+ },
+ {
+  "said": "mute",
+  "reply": "Muted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 1"
+  ]
+ },
+ {
+  "said": "unmute",
+  "reply": "Unmuted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0"
+  ]
+ },
+ {
+  "said": "brightness 0",
+  "reply": "Brightness 1 percent",
+  "runs": [
+   "busctl call org.freedesktop.login1 /org/freedesktop/login1/session/auto org.freedesktop.login1.Session SetBrightness ssu backlight intel_backlight 153"
+  ]
+ },
+ {
+  "said": "make the screen dimmer brightness",
+  "reply": "Brightness 1 percent",
+  "runs": [
+   "busctl call org.freedesktop.login1 /org/freedesktop/login1/session/auto org.freedesktop.login1.Session SetBrightness ssu backlight intel_backlight 153"
+  ]
+ },
+ {
+  "said": "set a timer for half an hour",
+  "reply": "Timer set for 30 minutes",
+  "runs": []
+ },
+ {
+  "said": "remind me in five minutes to call mom",
+  "reply": "Timer set for 5 minutes",
+  "runs": []
+ },
+ {
+  "said": "set a timer",
+  "reply": "For how long?",
+  "runs": []
+ },
+ {
+  "said": "what is 10 divided by 0",
+  "reply": "You can't divide by zero",
+  "runs": []
+ },
+ {
+  "said": "what is 9 ** 9 ** 9",
+  "reply": "That number is too big for me",
+  "runs": []
+ },
+ {
+  "said": "what is 15 percent of 200",
+  "reply": "That's 30",
+  "runs": []
+ },
+ {
+  "said": "shut down",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "yes",
+  "reply": "Okay, I'll shut down the computer",
+  "runs": [
+   "LAUNCH systemctl poweroff"
+  ]
+ },
+ {
+  "said": "restart",
+  "reply": "Should I restart the computer?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "connect cmf headphone and open text editor",
+  "reply": "Connected to CMF Neckband Pro. Opening Text Editor",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:02",
+   "LAUNCH gtk-launch org.gnome.TextEditor"
+  ]
+ },
+ {
+  "said": "search tom and jerry on youtube",
+  "reply": "Searching YouTube for tom and jerry",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://www.youtube.com/results?search_query=tom+and+jerry"
+  ]
+ },
+ {
+  "said": "open youtube in brave",
+  "reply": "Opening youtube in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://youtube.com"
+  ]
+ },
+ {
+  "said": "what time is it",
+  "reply": "It's <time>",
+  "runs": []
+ },
+ {
+  "said": "what's the battery",
+  "reply": "Battery is at 90% (charging)",
+  "runs": []
+ },
+ {
+  "said": "turn off wifi",
+  "reply": "Wi-Fi off",
+  "runs": [
+   "nmcli radio wifi off"
+  ]
+ },
+ {
+  "said": "pause",
+  "reply": "Paused",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause"
+  ]
+ },
+ {
+  "said": "next video",
+  "reply": "Next",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Next"
+  ]
+ },
+ {
+  "said": "",
+  "reply": "Sorry, I didn't catch that.",
+  "runs": []
+ },
+ {
+  "said": "what is the capital of Japan",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "open browser",
+  "reply": "I found Brave Web Browser, Web Browser, Google Chrome and Firefox. Which one should I open?",
+  "runs": []
+ },
+ {
+  "said": "the second one",
+  "reply": "Opening Web Browser",
+  "runs": [
+   "LAUNCH gtk-launch xfce4-web-browser"
+  ]
+ },
+ {
+  "said": "open editor",
+  "reply": "I found Text Editor, Settings Editor, Antigravity IDE and Cursor, and 4 more. Which one should I open?",
+  "runs": []
+ },
+ {
+  "said": "cancel",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "open music",
+  "reply": "I found LMMS, Rhythmbox and Spotify. Which one should I open?",
+  "runs": []
+ },
+ {
+  "said": "spotify",
+  "reply": "Opening Spotify",
+  "runs": [
+   "LAUNCH gtk-launch spotify_spotify"
+  ]
+ },
+ {
+  "said": "open a browser",
+  "reply": "I found Brave Web Browser, Web Browser, Google Chrome and Firefox. Which one should I open?",
+  "runs": []
+ },
+ {
+  "said": "any",
+  "reply": "Opening a new tab in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave chrome://newtab"
+  ]
+ },
+ {
+  "said": "connect to officenet",
+  "reply": "Connected to OFFICENET, signal 100 percent",
+  "runs": [
+   "nmcli device wifi connect 02:00:00:00:01:01"
+  ]
+ },
+ {
+  "said": "the first one",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "connect headphones",
+  "reply": "I found CMF Neckband Pro, Airdopes 141 Elite ANC, Rockerz 430 and OnePlus Nord Buds 2r, and 1 more. Which one should I connect?",
+  "runs": [
+   "bluetoothctl power on"
+  ]
+ },
+ {
+  "said": "the last one",
+  "reply": "Connected to OnePlus Nord Buds 2r",
+  "runs": [
+   "bluetoothctl power on",
+   "bluetoothctl connect 02:00:00:00:00:05"
+  ]
+ },
+ {
+  "said": "close all unwanted tabs and keep only terminal open",
+  "reply": "I can't close single tabs, only whole apps. I'll close Brave Web Browser, Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "keep brave",
+  "reply": "I'll close Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "yes",
+  "reply": "Closed Google Chrome, Files and Visual Studio Code",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "gdbus call --session --dest org.gnome.Nautilus --object-path /org/gnome/Nautilus --method org.gtk.Actions.Activate quit [] {}",
+   "systemctl --user kill --signal=SIGTERM snap.code.code-y.scope"
+  ]
+ },
+ {
+  "said": "close everything except vs code",
+  "reply": "I'll close Brave Web Browser, Google Chrome and Files. Okay?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Okay, nothing closed",
+  "runs": []
+ },
+ {
+  "said": "close brave",
+  "reply": "Closed Brave Web Browser",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM snap.brave.brave-x.scope"
+  ]
+ },
+ {
+  "said": "close chrome and open text editor",
+  "reply": "Closed Google Chrome. Opening Text Editor",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "LAUNCH gtk-launch org.gnome.TextEditor"
+  ]
+ },
+ {
+  "said": "close",
+  "reply": "I found Brave Web Browser, Google Chrome, Files and Visual Studio Code. Which one should I close?",
+  "runs": []
+ },
+ {
+  "said": "files",
+  "reply": "Closed Files",
+  "runs": [
+   "gdbus call --session --dest org.gnome.Nautilus --object-path /org/gnome/Nautilus --method org.gtk.Actions.Activate quit [] {}"
+  ]
+ },
+ {
+  "said": "close firefox",
+  "reply": "Firefox isn't open",
+  "runs": []
+ },
+ {
+  "said": "close spotify music thing",
+  "reply": "I can't find an open app called spotify music thing. Open now: Brave Web Browser, Google Chrome, Files and Visual Studio Code",
+  "runs": []
+ },
+ {
+  "said": "quit everything",
+  "reply": "I'll close Brave Web Browser, Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "yes",
+  "reply": "Closed Brave Web Browser, Google Chrome, Files and Visual Studio Code",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM snap.brave.brave-x.scope",
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "gdbus call --session --dest org.gnome.Nautilus --object-path /org/gnome/Nautilus --method org.gtk.Actions.Activate quit [] {}",
+   "systemctl --user kill --signal=SIGTERM snap.code.code-y.scope"
+  ]
+ },
+ {
+  "said": "type hello world",
+  "reply": "Typed",
+  "runs": [
+   "INPUT type_text ['hello world']"
+  ]
+ },
+ {
+  "said": "type open brave and close everything",
+  "reply": "Typed",
+  "runs": [
+   "INPUT type_text ['open brave and close everything']"
+  ]
+ },
+ {
+  "said": "press enter",
+  "reply": "Pressed enter",
+  "runs": [
+   "INPUT tap [[65293]]"
+  ]
+ },
+ {
+  "said": "enter",
+  "reply": "Pressed enter",
+  "runs": [
+   "INPUT tap [[65293]]"
+  ]
+ },
+ {
+  "said": "press control c",
+  "reply": "Pressed control c",
+  "runs": [
+   "INPUT tap [[65507, 99]]"
+  ]
+ },
+ {
+  "said": "copy and paste",
+  "reply": "Pressed control c. Pressed control v",
+  "runs": [
+   "INPUT tap [[65507, 99]]",
+   "INPUT tap [[65507, 118]]"
+  ]
+ },
+ {
+  "said": "close tab",
+  "reply": "Pressed control w",
+  "runs": [
+   "INPUT tap [[65507, 119]]"
+  ]
+ },
+ {
+  "said": "new tab",
+  "reply": "Pressed control t",
+  "runs": [
+   "INPUT tap [[65507, 116]]"
+  ]
+ },
+ {
+  "said": "switch window",
+  "reply": "Pressed alt tab",
+  "runs": [
+   "INPUT tap [[65513, 65289]]"
+  ]
+ },
+ {
+  "said": "close window",
+  "reply": "Pressed alt f4",
+  "runs": [
+   "INPUT tap [[65513, 65473]]"
+  ]
+ },
+ {
+  "said": "down 3 times",
+  "reply": "Pressed down 3 times",
+  "runs": [
+   "INPUT tap [[65364]]",
+   "INPUT tap [[65364]]",
+   "INPUT tap [[65364]]"
+  ]
+ },
+ {
+  "said": "click",
+  "reply": "Clicked",
+  "runs": [
+   "INPUT click [272, 1]"
+  ]
+ },
+ {
+  "said": "double click",
+  "reply": "Clicked",
+  "runs": [
+   "INPUT click [272, 2]"
+  ]
+ },
+ {
+  "said": "right click",
+  "reply": "Clicked",
+  "runs": [
+   "INPUT click [273, 1]"
+  ]
+ },
+ {
+  "said": "scroll down",
+  "reply": "Scrolled down",
+  "runs": [
+   "INPUT scroll [3]"
+  ]
+ },
+ {
+  "said": "scroll up 10",
+  "reply": "Scrolled up",
+  "runs": [
+   "INPUT scroll [-10]"
+  ]
+ },
+ {
+  "said": "move mouse left 200",
+  "reply": "Moved",
+  "runs": [
+   "INPUT move [-200, 0]"
+  ]
+ },
+ {
+  "said": "press banana",
+  "reply": "I don't know the key banana",
+  "runs": []
+ },
+ {
+  "said": "play tom and jerry",
+  "reply": "Playing tom and jerry on YouTube",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.youtube.com/watch?v=FAKE0000001"
+  ]
+ },
+ {
+  "said": "forward 30 seconds",
+  "reply": "Forward 30 seconds",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x 30000000"
+  ]
+ },
+ {
+  "said": "go back 15 seconds",
+  "reply": "Back 15 seconds",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x -15000000"
+  ]
+ },
+ {
+  "said": "rewind two minutes",
+  "reply": "Back 2 minutes",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x -120000000"
+  ]
+ },
+ {
+  "said": "play it",
+  "reply": "Playing",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Play"
+  ]
+ },
+ {
+  "said": "open",
+  "reply": "Open what?",
+  "runs": []
+ },
+ {
+  "said": "brave browser",
+  "reply": "Opening a new tab in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave chrome://newtab"
+  ]
+ },
+ {
+  "said": "open youtube",
+  "reply": "Opening youtube in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://youtube.com"
+  ]
+ },
+ {
+  "said": "search",
+  "reply": "Search what?",
+  "runs": []
+ },
+ {
+  "said": "lofi music",
+  "reply": "Searching the web for lofi music",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.google.com/search?q=lofi+music"
+  ]
+ },
+ {
+  "said": "type",
+  "reply": "Type what?",
+  "runs": []
+ },
+ {
+  "said": "hello there",
+  "reply": "Typed",
+  "runs": [
+   "INPUT type_text ['hello there']"
+  ]
+ },
+ {
+  "said": "press",
+  "reply": "Press what?",
+  "runs": []
+ },
+ {
+  "said": "enter",
+  "reply": "Pressed enter",
+  "runs": [
+   "INPUT tap [[65293]]"
+  ]
+ },
+ {
+  "said": "open",
+  "reply": "Open what?",
+  "runs": []
+ },
+ {
+  "said": "cancel",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "open firefox",
+  "reply": "Opening Firefox",
+  "runs": [
+   "LAUNCH gtk-launch firefox_firefox"
+  ]
+ },
+ {
+  "said": "open github",
+  "reply": "Opening github in Firefox",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://github.com"
+  ]
+ },
+ {
+  "said": "what is the capital of Japan",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what's the weather",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what is the weather in chennai today",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "who is ada lovelace",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "why is my wifi slow",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "how are you",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "thank you needle",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what is eating my disk space",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "rename the photos in downloads by date",
+  "reply": "Rename the 12 photos in Downloads to their capture date. Should I do it?",
+  "runs": [
+   "BRAIN 'rename the photos in downloads by date'"
+  ]
+ },
+ {
+  "said": "yes",
+  "reply": "Done",
+  "runs": [
+   "SHELL set -e\ncd ~/Downloads && exiftool -d %Y-%m-%d.%%e '-FileName<CreateDate' *.jpg"
+  ]
+ },
+ {
+  "said": "install vlc",
+  "reply": "Installing VLC needs the admin password, which I cannot type.",
+  "runs": [
+   "BRAIN 'install vlc'"
+  ]
+ },
+ {
+  "said": "no",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "delete the temp files in downloads",
+  "reply": "Careful, this deletes or overwrites files. Delete the 3 temp files in Downloads. Should I do it?",
+  "runs": [
+   "BRAIN 'delete the temp files in downloads'"
+  ]
+ },
+ {
+  "said": "open brave browser",
+  "reply": "Opening a new tab in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave chrome://newtab"
+  ]
+ },
+ {
+  "said": "delete the temp files in downloads",
+  "reply": "Careful, this deletes or overwrites files. Delete the 3 temp files in Downloads. Should I do it?",
+  "runs": [
+   "BRAIN 'delete the temp files in downloads'"
+  ]
+ },
+ {
+  "said": "yes",
+  "reply": "That failed: rm: cannot remove a.tmp",
+  "runs": [
+   "SHELL set -e\nrm ~/Downloads/a.tmp\nfalse\necho never"
+  ]
+ },
+ {
+  "said": "rename the photos in downloads by date",
+  "reply": "Rename the 12 photos in Downloads to their capture date. Should I do it?",
+  "runs": [
+   "BRAIN 'rename the photos in downloads by date'"
+  ]
+ },
+ {
+  "said": "no",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "wipe my home folder",
+  "reply": "I won't do that by voice, it is too risky or needs the admin password: Delete everything in your home folder.",
+  "runs": [
+   "BRAIN 'wipe my home folder'"
+  ]
+ },
+ {
+  "said": "shut down",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "no okay never mind",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "shut down",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "okay cancel",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "restart",
+  "reply": "Should I restart the computer?",
+  "runs": []
+ },
+ {
+  "said": "okay open chrome",
+  "reply": "Opening a new tab in Google Chrome",
+  "runs": [
+   "LAUNCH /usr/bin/google-chrome-stable chrome://newtab"
+  ]
+ },
+ {
+  "said": "shut down",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "yes please",
+  "reply": "Okay, I'll shut down the computer",
+  "runs": [
+   "LAUNCH systemctl poweroff"
+  ]
+ },
+ {
+  "said": "delete the temp files in downloads",
+  "reply": "Careful, this deletes or overwrites files. Delete the 3 temp files in Downloads. Should I do it?",
+  "runs": [
+   "BRAIN 'delete the temp files in downloads'"
+  ]
+ },
+ {
+  "said": "no don't do it",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "delete the temp files in downloads",
+  "reply": "Careful, this deletes or overwrites files. Delete the 3 temp files in Downloads. Should I do it?",
+  "runs": [
+   "BRAIN 'delete the temp files in downloads'"
+  ]
+ },
+ {
+  "said": "okay wait",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "close everything",
+  "reply": "I'll close Brave Web Browser, Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "no not all of them",
+  "reply": "Okay, nothing closed",
+  "runs": []
+ },
+ {
+  "said": "close everything",
+  "reply": "I'll close Brave Web Browser, Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "okay stop",
+  "reply": "Okay, nothing closed",
+  "runs": []
+ },
+ {
+  "said": "close everything",
+  "reply": "I'll close Brave Web Browser, Google Chrome, Files and Visual Studio Code. Okay?",
+  "runs": []
+ },
+ {
+  "said": "all of them",
+  "reply": "Closed Brave Web Browser, Google Chrome, Files and Visual Studio Code",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM snap.brave.brave-x.scope",
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "gdbus call --session --dest org.gnome.Nautilus --object-path /org/gnome/Nautilus --method org.gtk.Actions.Activate quit [] {}",
+   "systemctl --user kill --signal=SIGTERM snap.code.code-y.scope"
+  ]
+ },
+ {
+  "said": "close",
+  "reply": "I found Brave Web Browser, Google Chrome, Files and Visual Studio Code. Which one should I close?",
+  "runs": []
+ },
+ {
+  "said": "wait a second",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "close",
+  "reply": "I found Brave Web Browser, Google Chrome, Files and Visual Studio Code. Which one should I close?",
+  "runs": []
+ },
+ {
+  "said": "open chrome",
+  "reply": "Opening a new tab in Google Chrome",
+  "runs": [
+   "LAUNCH /usr/bin/google-chrome-stable chrome://newtab"
+  ]
+ },
+ {
+  "said": "connect headphones",
+  "reply": "I found CMF Neckband Pro, Airdopes 141 Elite ANC, Rockerz 430 and OnePlus Nord Buds 2r, and 1 more. Which one should I connect?",
+  "runs": [
+   "bluetoothctl power on"
+  ]
+ },
+ {
+  "said": "set a timer for 30 second",
+  "reply": "Timer set for 30 seconds",
+  "runs": []
+ },
+ {
+  "said": "open browser",
+  "reply": "I found Brave Web Browser, Web Browser, Google Chrome and Firefox. Which one should I open?",
+  "runs": []
+ },
+ {
+  "said": "no okay",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "do not close chrome",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "do not turn off the wifi",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "do not mute",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "do not lock the screen",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "do not disturb on",
+  "reply": "Do not disturb on",
+  "runs": [
+   "gsettings set org.gnome.desktop.notifications show-banners false"
+  ]
+ },
+ {
+  "said": "restart chrome",
+  "reply": "FAKE BRAIN ANSWER",
+  "runs": [
+   "BRAIN 'restart chrome'"
+  ]
+ },
+ {
+  "said": "yes",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "shut down chrome",
+  "reply": "FAKE BRAIN ANSWER",
+  "runs": [
+   "BRAIN 'shut down chrome'"
+  ]
+ },
+ {
+  "said": "power off",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "go to sleep",
+  "reply": "Should I put the computer to sleep?",
+  "runs": []
+ },
+ {
+  "said": "cancel",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "turn off the computer",
+  "reply": "Should I shut down the computer?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "organize my home folder",
+  "reply": "I won't do that by voice, it is too risky or needs the admin password: Tidy the home folder.",
+  "runs": [
+   "BRAIN 'organize my home folder'"
+  ]
+ },
+ {
+  "said": "clean up my downloads folder",
+  "reply": "Careful, this deletes or overwrites files. Delete the temp files in Downloads. Should I do it?",
+  "runs": [
+   "BRAIN 'clean up my downloads folder'"
+  ]
+ },
+ {
+  "said": "yes",
+  "reply": "Done",
+  "runs": [
+   "SHELL set -e\ncd ~/Downloads\nrm -f *.tmp"
+  ]
+ },
+ {
+  "said": "remove that file",
+  "reply": "Sorry, the plan I got back was incomplete, so I did nothing",
+  "runs": [
+   "BRAIN 'remove that file'"
+  ]
+ },
+ {
+  "said": "yes",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "fix the blank answer",
+  "reply": "Sorry, I got an answer I couldn't read, so I did nothing",
+  "runs": [
+   "BRAIN 'fix the blank answer'"
+  ]
+ },
+ {
+  "said": "turn off wifi and bluetooth",
+  "reply": "Wi-Fi off. Bluetooth off",
+  "runs": [
+   "nmcli radio wifi off",
+   "bluetoothctl power off"
+  ]
+ },
+ {
+  "said": "turn off bluetooth and wifi",
+  "reply": "Bluetooth off. Wi-Fi off",
+  "runs": [
+   "bluetoothctl power off",
+   "nmcli radio wifi off"
+  ]
+ },
+ {
+  "said": "search for volume and brightness tips",
+  "reply": "Searching the web for volume and brightness tips",
+  "runs": [
+   "LAUNCH /usr/bin/google-chrome-stable https://www.google.com/search?q=volume+and+brightness+tips"
+  ]
+ },
+ {
+  "said": "open date and time settings",
+  "reply": "Opening Settings",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Settings"
+  ]
+ },
+ {
+  "said": "restart and close everything",
+  "reply": "I'll leave close everything for later. Should I restart the computer?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Cancelled",
+  "runs": []
+ },
+ {
+  "said": "close chrome and leave the rest",
+  "reply": "Closed Google Chrome",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope"
+  ]
+ },
+ {
+  "said": "close brave but keep the others",
+  "reply": "Closed Brave Web Browser",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM snap.brave.brave-x.scope"
+  ]
+ },
+ {
+  "said": "close chrome but not brave",
+  "reply": "Closed Google Chrome",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope"
+  ]
+ },
+ {
+  "said": "close chrome and brave",
+  "reply": "Closed Google Chrome and Brave Web Browser",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "systemctl --user kill --signal=SIGTERM snap.brave.brave-x.scope"
+  ]
+ },
+ {
+  "said": "close this window",
+  "reply": "Pressed alt f4",
+  "runs": [
+   "INPUT tap [[65513, 65473]]"
+  ]
+ },
+ {
+  "said": "close the tab",
+  "reply": "Pressed control w",
+  "runs": [
+   "INPUT tap [[65507, 119]]"
+  ]
+ },
+ {
+  "said": "close chrome and banana",
+  "reply": "I can't tell which open app you mean by banana, so I closed nothing. Open now: Brave Web Browser, Google Chrome, Files and Visual Studio Code",
+  "runs": []
+ },
+ {
+  "said": "is the wifi off",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "is do not disturb on",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what notifications do i have",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what speaker should i buy",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "turn off caps lock",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "log out",
+  "reply": "Sorry, I didn't catch that. Say it again?",
+  "runs": []
+ },
+ {
+  "said": "forward this email to john",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "go back to the previous page",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "skip the ad",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what is the time complexity of quicksort",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what time is it in tokyo",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what day is christmas",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "what is the charge of an electron",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "show me the time",
+  "reply": "It's <time>",
+  "runs": []
+ },
+ {
+  "said": "how much battery is left",
+  "reply": "Battery is at 90% (charging)",
+  "runs": []
+ },
+ {
+  "said": "turn off the volume",
+  "reply": "Muted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 1"
+  ]
+ },
+ {
+  "said": "turn the sound off",
+  "reply": "Muted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 1"
+  ]
+ },
+ {
+  "said": "volume zero",
+  "reply": "Muted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 1"
+  ]
+ },
+ {
+  "said": "volume to maximum",
+  "reply": "Volume 100 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 100%"
+  ]
+ },
+ {
+  "said": "volume",
+  "reply": "Volume is at 59 percent",
+  "runs": []
+ },
+ {
+  "said": "turn the volume on",
+  "reply": "Unmuted",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0"
+  ]
+ },
+ {
+  "said": "set volume to twenty five",
+  "reply": "Volume 25 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 25%"
+  ]
+ },
+ {
+  "said": "set volume to one hundred",
+  "reply": "Volume 100 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 100%"
+  ]
+ },
+ {
+  "said": "set volume to twelve",
+  "reply": "Volume 12 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 12%"
+  ]
+ },
+ {
+  "said": "volume up 20",
+  "reply": "Volume 79 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 79%"
+  ]
+ },
+ {
+  "said": "increase the volume 10 percent",
+  "reply": "Volume 69 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 69%"
+  ]
+ },
+ {
+  "said": "set brightness to seventy five",
+  "reply": "Brightness 75 percent",
+  "runs": [
+   "busctl call org.freedesktop.login1 /org/freedesktop/login1/session/auto org.freedesktop.login1.Session SetBrightness ssu backlight intel_backlight 11520"
+  ]
+ },
+ {
+  "said": "brightness up 20",
+  "reply": "Brightness 26 percent",
+  "runs": [
+   "busctl call org.freedesktop.login1 /org/freedesktop/login1/session/auto org.freedesktop.login1.Session SetBrightness ssu backlight intel_backlight 3993"
+  ]
+ },
+ {
+  "said": "set a timer for twenty five minutes",
+  "reply": "Timer set for 25 minutes",
+  "runs": []
+ },
+ {
+  "said": "set a timer for one hundred twenty seconds",
+  "reply": "Timer set for 2 minutes",
+  "runs": []
+ },
+ {
+  "said": "set a timer for half a minute",
+  "reply": "Timer set for 30 seconds",
+  "runs": []
+ },
+ {
+  "said": "set a timer for an hour and a half",
+  "reply": "Timer set for 1 hour and 30 minutes",
+  "runs": []
+ },
+ {
+  "said": "set a timer for 1 hour 30 minutes",
+  "reply": "Timer set for 1 hour and 30 minutes",
+  "runs": []
+ },
+ {
+  "said": "go back twenty five seconds",
+  "reply": "Back 25 seconds",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x -25000000"
+  ]
+ },
+ {
+  "said": "forward a minute",
+  "reply": "Forward 1 minute",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x 60000000"
+  ]
+ },
+ {
+  "said": "forward 1 minute 30",
+  "reply": "Forward 1 minute and 30 seconds",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Seek x 90000000"
+  ]
+ },
+ {
+  "said": "remind me at 5 pm to call mom",
+  "reply": "For how long?",
+  "runs": []
+ },
+ {
+  "said": "in ten minutes",
+  "reply": "Timer set for 10 minutes",
+  "runs": []
+ },
+ {
+  "said": "open google chrome",
+  "reply": "Opening a new tab in Google Chrome",
+  "runs": [
+   "LAUNCH /usr/bin/google-chrome-stable chrome://newtab"
+  ]
+ },
+ {
+  "said": "open it",
+  "reply": "Open what?",
+  "runs": []
+ },
+ {
+  "said": "cancel",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "open downloads",
+  "reply": "Opening your downloads folder",
+  "runs": [
+   "LAUNCH xdg-open ~/Downloads"
+  ]
+ },
+ {
+  "said": "open music folder",
+  "reply": "Opening your music folder",
+  "runs": [
+   "LAUNCH xdg-open ~/Music"
+  ]
+ },
+ {
+  "said": "open sound settings",
+  "reply": "Opening Settings",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Settings"
+  ]
+ },
+ {
+  "said": "open banana",
+  "reply": "I don't know an app called banana. Should I open banana dot com?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Okay",
+  "runs": []
+ },
+ {
+  "said": "open notepad",
+  "reply": "Did you mean Text Editor?",
+  "runs": []
+ },
+ {
+  "said": "yes",
+  "reply": "Opening Text Editor",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.TextEditor"
+  ]
+ },
+ {
+  "said": "start recording",
+  "reply": "Did you mean Volume Control?",
+  "runs": []
+ },
+ {
+  "said": "no",
+  "reply": "Okay, cancelled",
+  "runs": []
+ },
+ {
+  "said": "open",
+  "reply": "Open what?",
+  "runs": []
+ },
+ {
+  "said": "open firefox",
+  "reply": "Opening Firefox",
+  "runs": [
+   "LAUNCH gtk-launch firefox_firefox"
+  ]
+ },
+ {
+  "said": "search google for best restaurants in chennai",
+  "reply": "Searching the web for best restaurants in chennai",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://www.google.com/search?q=best+restaurants+in+chennai"
+  ]
+ },
+ {
+  "said": "play walking on sunshine",
+  "reply": "Playing walking on sunshine on YouTube",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://www.youtube.com/watch?v=FAKE0000001"
+  ]
+ },
+ {
+  "said": "search google cats in firefox",
+  "reply": "Searching the web for cats",
+  "runs": [
+   "LAUNCH /snap/bin/firefox https://www.google.com/search?q=cats"
+  ]
+ },
+ {
+  "said": "connect to home fiber 5g",
+  "reply": "Home_Fiber isn't in range right now. Is it switched on?",
+  "runs": []
+ },
+ {
+  "said": "enable wifi",
+  "reply": "Wi-Fi on",
+  "runs": []
+ },
+ {
+  "said": "restart the wifi",
+  "reply": "Wi-Fi restarted",
+  "runs": [
+   "nmcli radio wifi off"
+  ]
+ },
+ {
+  "said": "shut down the wifi",
+  "reply": "Wi-Fi off",
+  "runs": [
+   "nmcli radio wifi off"
+  ]
+ },
+ {
+  "said": "connect to the vpn",
+  "reply": "I can't do that locally yet: connect to the vpn",
+  "runs": []
+ },
+ {
+  "said": "disconnect oneplus",
+  "reply": "I found OnePlus Bullets Wireless Z2 and OnePlus Nord Buds 2r. Which one should I disconnect?",
+  "runs": []
+ },
+ {
+  "said": "the first one",
+  "reply": "Disconnected OnePlus Bullets Wireless Z2",
+  "runs": [
+   "bluetoothctl disconnect 02:00:00:00:00:04"
+  ]
+ },
+ {
+  "said": "disconnect banana headphones",
+  "reply": "I don't know a Bluetooth device called banana",
+  "runs": []
+ },
+ {
+  "said": "disconnect cmf",
+  "reply": "Disconnected CMF Neckband Pro",
+  "runs": [
+   "bluetoothctl disconnect 02:00:00:00:00:02"
+  ]
+ },
+ {
+  "said": "five minute timer",
+  "reply": "Timer set for 5 minutes",
+  "runs": []
+ },
+ {
+  "said": "max volume",
+  "reply": "Volume 100 percent",
+  "runs": [
+   "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0",
+   "wpctl set-volume @DEFAULT_AUDIO_SINK@ 100%"
+  ]
+ },
+ {
+  "said": "stop the music",
+  "reply": "Paused",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause"
+  ]
+ },
+ {
+  "said": "join the officenet wifi",
+  "reply": "Connected to OFFICENET, signal 100 percent",
+  "runs": [
+   "nmcli device wifi connect 02:00:00:00:01:01"
+  ]
+ },
+ {
+  "said": "play the next song",
+  "reply": "Next",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Next"
+  ]
+ },
+ {
+  "said": "calculate (0-8) to the power of 0.5",
+  "reply": "That has no real-number answer",
+  "runs": []
+ },
+ {
+  "said": "open YouTube and brave browser and type and play Radhe Maa song",
+  "reply": "Playing Radhe Maa song on YouTube",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.youtube.com/watch?v=FAKE0000001"
+  ]
+ },
+ {
+  "said": "open brave and search for Ridhima song",
+  "reply": "Searching the web for Ridhima song",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.google.com/search?q=Ridhima+song"
+  ]
+ },
+ {
+  "said": "search for Ridhima song",
+  "reply": "Searching the web for Ridhima song",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.google.com/search?q=Ridhima+song"
+  ]
+ },
+ {
+  "said": "google best biryani in chennai",
+  "reply": "Searching the web for best biryani in chennai",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.google.com/search?q=best+biryani+in+chennai"
+  ]
+ },
+ {
+  "said": "look up weather in chennai",
+  "reply": "Searching the web for weather in chennai",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://www.google.com/search?q=weather+in+chennai"
+  ]
+ },
+ {
+  "said": "open brave browser and open YouTube in brave Browser",
+  "reply": "Opening youtube in Brave Web Browser",
+  "runs": [
+   "LAUNCH /snap/bin/brave https://youtube.com"
+  ]
+ },
+ {
+  "said": "close chrome and open text editor",
+  "reply": "Closed Google Chrome. Opening Text Editor",
+  "runs": [
+   "systemctl --user kill --signal=SIGTERM app-com.google.Chrome-1.scope",
+   "LAUNCH gtk-launch org.gnome.TextEditor"
+  ]
+ },
+ {
+  "said": "pass",
+  "reply": "Paused",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause"
+  ]
+ },
+ {
+  "said": "boss",
+  "reply": "Paused",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause"
+  ]
+ },
+ {
+  "said": "pass the song",
+  "reply": "Paused",
+  "runs": [
+   "busctl --user call org.mpris.MediaPlayer2.brave.instance8148 /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause"
+  ]
+ },
+ {
+  "said": "boss is coming",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "pass me the salt",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "hisar vishwas",
+  "reply": "Sorry, I didn't catch that. Say it again?",
+  "runs": []
+ },
+ {
+  "said": "open calculator",
+  "reply": "Opening Calculator",
+  "runs": [
+   "LAUNCH gtk-launch org.gnome.Calculator"
+  ]
+ },
+ {
+  "said": "thank you",
+  "reply": "Sorry, I can't answer that offline. I can open apps and sites, search, control volume, brightness, Wi-Fi and Bluetooth, set timers, and tell the time or battery.",
+  "runs": []
+ },
+ {
+  "said": "volume up [when 'get-volume' fails]",
+  "reply": "I couldn't read the volume, so I left it as it is",
+  "runs": []
+ },
+ {
+  "said": "what's the battery [when 'upower' fails]",
+  "reply": "I couldn't read the battery",
+  "runs": []
+ },
+ {
+  "said": "connect to wifi [when 'connection show' fails]",
+  "reply": "I couldn't read your saved Wi-Fi networks",
+  "runs": []
+ },
+ {
+  "said": "turn off wifi [when 'radio wifi off' fails]",
+  "reply": "I couldn't turn Wi-Fi off",
+  "runs": []
+ },
+ {
+  "said": "close chrome [when '--signal=SIGTERM' fails]",
+  "reply": "I couldn't close Google Chrome",
+  "runs": []
+ }
+]
