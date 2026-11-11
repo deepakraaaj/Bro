@@ -44,6 +44,10 @@ A.VIDEO_LOG = os.path.join(tempfile.gettempdir(), "needle-test-youtube-log.md") 
 if os.path.exists(A.VIDEO_LOG):
     os.remove(A.VIDEO_LOG)
 A.LLM_MODEL = ""        # no local chat model in tests
+# A fixed list of installed apps, so results don't depend on what this machine has installed.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apps.json")) as f:
+    _APPS = [dict(a, kinds=set(a["kinds"])) for a in json.load(f)]
+A.installed_apps = lambda: _APPS
 _read_file = A.read_file
 A.read_file = lambda p: {"brightness": "913", "max_brightness": "15360"}.get(os.path.basename(p)) or _read_file(p)
 sim = {"bt_blocked": True, "volume": 0.59, "adapter_delay": 3}

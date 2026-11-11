@@ -96,7 +96,7 @@ Chains work too: "open brave and search for lofi music" opens one new tab in Bra
 - **Python 3.12+**. Tested on 3.14.
 - **Internet** for speech-to-text.
 - **[Ollama](https://ollama.com)**, for answering questions. Optional: without it Bro still runs every command.
-- **A coding-agent CLI**, logged in, for "do anything" requests: see `agent_binary()` and `AGENT_MODEL` in `assistant.py`. Optional: without it those requests get "I can't do that locally yet".
+- **A coding-agent CLI**, logged in, for "do anything" requests: point `NEEDLE_AGENT_CLI` at it (see [Configuration](#configuration)). Optional: without it those requests get "I can't do that locally yet".
 - **About 4 GB of free disk space** for the models, and **about 3 GB of free RAM** while the question model is loaded.
 
 ## Install
@@ -148,6 +148,9 @@ systemctl --user daemon-reload
 systemctl --user enable --now needle.service
 ```
 
+To use the optional agent, add a line like this to the `[Service]` section of `~/.config/systemd/user/needle.service` before enabling it:
+`Environment="NEEDLE_AGENT_CLI=/path/to/agent-cli"`
+
 The **Bro** button appears in the top bar a few seconds later. The service restarts itself if it crashes or hangs.
 
 | Task | Command |
@@ -194,7 +197,8 @@ The trade-off: calls then use the laptop mic while you still hear through the ea
 | Setting | Where | Default |
 |---|---|---|
 | Local question model | env `NEEDLE_LLM`, or `LLM_MODEL` in `assistant.py` (`""` turns it off) | `qwen3:4b-instruct-2507-q4_K_M` |
-| Model for "do anything" | `AGENT_MODEL` in `assistant.py` | `haiku` |
+| Agent program for "do anything" | env `NEEDLE_AGENT_CLI`: path to a coding-agent CLI (a glob is fine) | unset (feature off) |
+| Model passed to that program | env `NEEDLE_AGENT_MODEL` | the program's default |
 | Speech language | `LANGUAGE` in `voice_assistant.py`; `en-US` is always tried as well | `en-IN` |
 | Wake word sensitivity | `WAKE_THRESHOLD` in `voice_assistant_v2.py` (higher means fewer false wakes) | `0.4` |
 | Answer window after a question | `FOLLOW_UP_SECONDS` in `voice_assistant_v2.py` | 10 s |
@@ -205,7 +209,7 @@ The trade-off: calls then use the laptop mic while you still hear through the ea
 
 ## Tests
 
-Everything that touches the system goes through a few functions (`sh`, `launch`, `inject`, `fetch_json`, `run_agent`, `run_shell`). `tests/harness.py` fakes all of them, simulating Wi-Fi networks, Bluetooth devices, a media player and running apps. It also hard-blocks any real command, network request or key press, so **running the tests can never change your machine**.
+Everything that touches the system goes through a few functions (`sh`, `launch`, `inject`, `fetch_json`, `run_agent`, `run_shell`). `tests/harness.py` fakes all of them, simulating Wi-Fi networks, Bluetooth devices, a media player, running apps and a fixed list of installed apps (`tests/apps.json`), so the results are the same on any machine. It also hard-blocks any real command, network request or key press, so **running the tests can never change your machine**.
 
 ```bash
 cd tests

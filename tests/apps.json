@@ -1,0 +1,1563 @@
+[
+ {
+  "browser": false,
+  "exec": "/usr/bin/anydesk %u",
+  "generic": "AnyDesk",
+  "id": "anydesk",
+  "keywords": "",
+  "kinds": [
+   "anydesk",
+   "gtk",
+   "network"
+  ],
+  "name": "AnyDesk"
+ },
+ {
+  "browser": false,
+  "exec": "copyq --start-server show",
+  "generic": "Clipboard Manager",
+  "id": "com.github.hluk.copyq",
+  "keywords": "",
+  "kinds": [
+   "clipboard",
+   "kde",
+   "manager",
+   "qt",
+   "utility"
+  ],
+  "name": "CopyQ"
+ },
+ {
+  "browser": false,
+  "exec": "env NO_AT_BRIDGE=1 /usr/share/dbeaver-ce/dbeaver %U",
+  "generic": "Universal Database Manager",
+  "id": "dbeaver-ce",
+  "keywords": "Database SQL IDE JDBC ODBC MySQL PostgreSQL Oracle DB2 MariaDB",
+  "kinds": [
+   "database",
+   "development",
+   "ide",
+   "manager",
+   "universal"
+  ],
+  "name": "dbeaver-ce"
+ },
+ {
+  "browser": false,
+  "exec": "/opt/docker-desktop/bin/docker-desktop",
+  "generic": "",
+  "id": "docker-desktop",
+  "keywords": "container docker ",
+  "kinds": [
+   "development"
+  ],
+  "name": "Docker Desktop"
+ },
+ {
+  "browser": false,
+  "exec": "/usr/bin/gnome-language-selector",
+  "generic": "",
+  "id": "gnome-language-selector",
+  "keywords": "Language Input method Region Format ",
+  "kinds": [
+   "desktop",
+   "gnome",
+   "gtk",
+   "panel",
+   "personal",
+   "setting",
+   "unity",
+   "x"
+  ],
+  "name": "Language Support"
+ },
+ {
+  "browser": true,
+  "exec": "/usr/bin/google-chrome-stable %U",
+  "generic": "Web Browser",
+  "id": "google-chrome",
+  "keywords": "",
+  "kinds": [
+   "browser",
+   "network",
+   "web"
+  ],
+  "name": "Google Chrome"
+ },
+ {
+  "browser": false,
+  "exec": "im-config",
+  "generic": "",
+  "id": "im-config",
+  "keywords": "keyboard input",
+  "kinds": [
+   "setting"
+  ],
+  "name": "Input Method"
+ },
+ {
+  "browser": false,
+  "exec": "info",
+  "generic": "",
+  "id": "info",
+  "keywords": "TeXInfo Documentation",
+  "kinds": [
+   "console",
+   "documentation",
+   "only",
+   "utility"
+  ],
+  "name": "TeXInfo"
+ },
+ {
+  "browser": false,
+  "exec": "systemsettings",
+  "generic": "KDE System Settings",
+  "id": "kdesystemsettings",
+  "keywords": "systemsettings",
+  "kinds": [
+   "kde",
+   "qt",
+   "setting",
+   "system"
+  ],
+  "name": "KDE System Settings"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice --calc %U",
+  "generic": "Spreadsheet",
+  "id": "libreoffice-calc",
+  "keywords": "Accounting Stats OpenDocument Spreadsheet Chart Microsoft Excel Microsoft Works OpenOffice Calc ods xls xlsx ",
+  "kinds": [
+   "office",
+   "spreadsheet"
+  ],
+  "name": "LibreOffice Calc"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice --draw %U",
+  "generic": "Drawing Program",
+  "id": "libreoffice-draw",
+  "keywords": "Vector Schema Diagram Layout OpenDocument Graphics Microsoft Publisher Microsoft Visio Corel Draw cdr odg svg pdf vsd ",
+  "kinds": [
+   "2dgraphic",
+   "chart",
+   "drawing",
+   "flow",
+   "graphic",
+   "office",
+   "program",
+   "vector"
+  ],
+  "name": "LibreOffice Draw"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice --impress %U",
+  "generic": "Presentation",
+  "id": "libreoffice-impress",
+  "keywords": "Slideshow Slides OpenDocument Presentation Microsoft PowerPoint Microsoft Works OpenOffice Impress odp ppt pptx ",
+  "kinds": [
+   "office",
+   "presentation"
+  ],
+  "name": "LibreOffice Impress"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice --math %U",
+  "generic": "Formula Editor",
+  "id": "libreoffice-math",
+  "keywords": "Equation OpenDocument Formula Formula odf MathML ",
+  "kinds": [
+   "editor",
+   "formula",
+   "math",
+   "office"
+  ],
+  "name": "LibreOffice Math"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice %U",
+  "generic": "Office",
+  "id": "libreoffice-startcenter",
+  "keywords": "",
+  "kinds": [
+   "base",
+   "core",
+   "hat",
+   "office",
+   "red",
+   "se",
+   "su",
+   "x"
+  ],
+  "name": "LibreOffice"
+ },
+ {
+  "browser": false,
+  "exec": "libreoffice --writer %U",
+  "generic": "Word Processor",
+  "id": "libreoffice-writer",
+  "keywords": "Text Letter Fax Document OpenDocument Text Microsoft Word Microsoft Works Lotus WordPro OpenOffice Writer CV odt doc docx rtf ",
+  "kinds": [
+   "office",
+   "processor",
+   "word"
+  ],
+  "name": "LibreOffice Writer"
+ },
+ {
+  "browser": false,
+  "exec": "/usr/bin/light-locker-settings",
+  "generic": "",
+  "id": "light-locker-settings",
+  "keywords": "Configuration Screensaver User ",
+  "kinds": [
+   "desktop",
+   "gnome",
+   "gtk",
+   "panel",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Light Locker Settings"
+ },
+ {
+  "browser": false,
+  "exec": "lmms %f",
+  "generic": "Music production suite",
+  "id": "lmms",
+  "keywords": "Audio MIDI Multitrack Sequencer DAW ALSA JACK LADSPA VST Qt ",
+  "kinds": [
+   "audio",
+   "midi",
+   "music",
+   "production",
+   "qt",
+   "suite",
+   "video"
+  ],
+  "name": "LMMS"
+ },
+ {
+  "browser": false,
+  "exec": "resources",
+  "generic": "",
+  "id": "net.nokyan.Resources",
+  "keywords": "System Resources Monitor Processes Usage Task Manager CPU RAM Memory GPU Performance Power Battery ",
+  "kinds": [
+   "system"
+  ],
+  "name": "Resources"
+ },
+ {
+  "browser": false,
+  "exec": "nm-connection-editor",
+  "generic": "",
+  "id": "nm-connection-editor",
+  "keywords": "",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "network",
+   "setting",
+   "utilitie",
+   "x"
+  ],
+  "name": "Advanced Network Configuration"
+ },
+ {
+  "browser": false,
+  "exec": "ibus-setup",
+  "generic": "",
+  "id": "org.freedesktop.IBus.Setup",
+  "keywords": "keyboard input ",
+  "kinds": [
+   "setting"
+  ],
+  "name": "IBus Preferences"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-calculator",
+  "generic": "",
+  "id": "org.gnome.Calculator",
+  "keywords": "calculation arithmetic scientific financial ",
+  "kinds": [
+   "calculator",
+   "gnome",
+   "gtk",
+   "utility"
+  ],
+  "name": "Calculator"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-calendar %U",
+  "generic": "",
+  "id": "org.gnome.Calendar",
+  "keywords": "Calendar Event Reminder ",
+  "kinds": [
+   "calendar",
+   "core",
+   "gnome",
+   "gtk",
+   "office"
+  ],
+  "name": "Calendar"
+ },
+ {
+  "browser": false,
+  "exec": "/usr/bin/gnome-characters",
+  "generic": "",
+  "id": "org.gnome.Characters",
+  "keywords": "characters unicode punctuation math letters emoji emoticon symbols ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "utility"
+  ],
+  "name": "Characters"
+ },
+ {
+  "browser": false,
+  "exec": "deja-dup %u",
+  "generic": "",
+  "id": "org.gnome.DejaDup",
+  "keywords": "d\u00e9j\u00e0 deja dup archive archiving backup backups back up ",
+  "kinds": [
+   "archiving",
+   "utility"
+  ],
+  "name": "Backups"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-disks",
+  "generic": "",
+  "id": "org.gnome.DiskUtility",
+  "keywords": "disk drive volume harddisk hdd disc cdrom dvd partition iso image backup restore benchmark raid luks encryption S.M.A.R.T. smart ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "hardware",
+   "setting",
+   "utilitie",
+   "utility",
+   "x"
+  ],
+  "name": "Disks"
+ },
+ {
+  "browser": false,
+  "exec": "evince %U",
+  "generic": "",
+  "id": "org.gnome.Evince",
+  "keywords": "pdf ps postscript dvi xps djvu tiff document presentation viewer evince ",
+  "kinds": [
+   "2dgraphic",
+   "gnome",
+   "graphic",
+   "gtk",
+   "office",
+   "vector",
+   "viewer"
+  ],
+  "name": "Evince"
+ },
+ {
+  "browser": false,
+  "exec": "file-roller %U",
+  "generic": "Archive Manager",
+  "id": "org.gnome.FileRoller",
+  "keywords": "zip tar extract unpack ",
+  "kinds": [
+   "archive",
+   "archiving",
+   "compression",
+   "gnome",
+   "gtk",
+   "manager",
+   "utility"
+  ],
+  "name": "File Roller"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-logs",
+  "generic": "Log Viewer",
+  "id": "org.gnome.Logs",
+  "keywords": "log journal debug error ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "log",
+   "monitor",
+   "system",
+   "utility",
+   "viewer"
+  ],
+  "name": "Logs"
+ },
+ {
+  "browser": false,
+  "exec": "loupe %U",
+  "generic": "",
+  "id": "org.gnome.Loupe",
+  "keywords": "Picture Graphics Loupe ",
+  "kinds": [
+   "2dgraphic",
+   "gnome",
+   "graphic",
+   "gtk",
+   "raster",
+   "viewer"
+  ],
+  "name": "Image Viewer"
+ },
+ {
+  "browser": false,
+  "exec": "nautilus --new-window %U",
+  "generic": "",
+  "id": "org.gnome.Nautilus",
+  "keywords": "folder manager explore disk filesystem nautilus ",
+  "kinds": [
+   "core",
+   "file",
+   "gnome",
+   "gtk",
+   "manager",
+   "utility"
+  ],
+  "name": "Files"
+ },
+ {
+  "browser": false,
+  "exec": "papers %U",
+  "generic": "",
+  "id": "org.gnome.Papers",
+  "keywords": "pdf djvu tiff document presentation viewer papers ",
+  "kinds": [
+   "2dgraphic",
+   "gnome",
+   "graphic",
+   "gtk",
+   "office",
+   "vector",
+   "viewer"
+  ],
+  "name": "Document Viewer"
+ },
+ {
+  "browser": false,
+  "exec": "ptyxis",
+  "generic": "Terminal",
+  "id": "org.gnome.Ptyxis",
+  "keywords": "terminal prompt ptyxis shell command commandline cmd cli console container podman toolbox distrobox ",
+  "kinds": [
+   "emulator",
+   "gnome",
+   "gtk",
+   "system",
+   "terminal"
+  ],
+  "name": "Terminal"
+ },
+ {
+  "browser": false,
+  "exec": "rhythmbox %U",
+  "generic": "Music Player",
+  "id": "org.gnome.Rhythmbox3",
+  "keywords": "Audio Song MP3 CD Podcast MTP iPod Playlist Last.fm UPnP DLNA Radio ",
+  "kinds": [
+   "audio",
+   "gnome",
+   "gtk",
+   "music",
+   "player",
+   "video"
+  ],
+  "name": "Rhythmbox"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-control-center",
+  "generic": "",
+  "id": "org.gnome.Settings",
+  "keywords": "Preferences Settings ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "setting"
+  ],
+  "name": "Settings"
+ },
+ {
+  "browser": false,
+  "exec": "shotwell %U",
+  "generic": "Photo Manager",
+  "id": "org.gnome.Shotwell",
+  "keywords": "album camera cameras crop edit enhance export gallery image images import organize photo photographs photos picture pictures photography print publish rotate share tags video flickr picasa youtube piwigo ",
+  "kinds": [
+   "gnome",
+   "graphic",
+   "gtk",
+   "manager",
+   "photo",
+   "photography"
+  ],
+  "name": "Shotwell"
+ },
+ {
+  "browser": false,
+  "exec": "showtime --new-window %U",
+  "generic": "",
+  "id": "org.gnome.Showtime",
+  "keywords": "Video Movie Film Clip Player Showtime ",
+  "kinds": [
+   "audio",
+   "gnome",
+   "gtk",
+   "player",
+   "video"
+  ],
+  "name": "Video Player"
+ },
+ {
+  "browser": false,
+  "exec": "snapshot",
+  "generic": "",
+  "id": "org.gnome.Snapshot",
+  "keywords": "picture photos camera webcam snapshot ",
+  "kinds": [
+   "audio",
+   "gnome",
+   "gtk",
+   "recorder",
+   "video"
+  ],
+  "name": "Camera"
+ },
+ {
+  "browser": false,
+  "exec": "sysprof %u",
+  "generic": "Profiler",
+  "id": "org.gnome.Sysprof",
+  "keywords": "",
+  "kinds": [
+   "development",
+   "gnome",
+   "gtk",
+   "profiler",
+   "utility"
+  ],
+  "name": "Sysprof"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-terminal",
+  "generic": "",
+  "id": "org.gnome.Terminal",
+  "keywords": "shell prompt command commandline cmd ptyxis terminal cli console ",
+  "kinds": [
+   "emulator",
+   "gnome",
+   "gtk",
+   "system",
+   "terminal",
+   "utilitie",
+   "utility",
+   "x"
+  ],
+  "name": "Terminal"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-text-editor %U",
+  "generic": "Text Editor",
+  "id": "org.gnome.TextEditor",
+  "keywords": "write notepad ",
+  "kinds": [
+   "editor",
+   "gnome",
+   "gtk",
+   "text",
+   "utility"
+  ],
+  "name": "Text Editor"
+ },
+ {
+  "browser": false,
+  "exec": "yelp %u",
+  "generic": "",
+  "id": "org.gnome.Yelp",
+  "keywords": "documentation information manual help ",
+  "kinds": [
+   "core",
+   "documentation",
+   "gnome",
+   "gtk",
+   "utility"
+  ],
+  "name": "Help"
+ },
+ {
+  "browser": false,
+  "exec": "baobab %U",
+  "generic": "",
+  "id": "org.gnome.baobab",
+  "keywords": "storage space cleanup ",
+  "kinds": [
+   "filesystem",
+   "gnome",
+   "gtk",
+   "system",
+   "utility"
+  ],
+  "name": "Disk Usage Analyzer"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-clocks",
+  "generic": "Clocks",
+  "id": "org.gnome.clocks",
+  "keywords": "time timer alarm world clock stopwatch time zone ",
+  "kinds": [
+   "clock",
+   "gnome",
+   "gtk",
+   "utility"
+  ],
+  "name": "Clocks"
+ },
+ {
+  "browser": false,
+  "exec": "gnome-font-viewer %u",
+  "generic": "",
+  "id": "org.gnome.font-viewer",
+  "keywords": "fonts fontface ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "utility"
+  ],
+  "name": "Fonts"
+ },
+ {
+  "browser": false,
+  "exec": "seahorse %u",
+  "generic": "",
+  "id": "org.gnome.seahorse.Application",
+  "keywords": "keyring encryption security sign ssh gpg pgp seahorse ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gnome",
+   "gtk",
+   "security",
+   "setting",
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "Passwords and Keys"
+ },
+ {
+  "browser": false,
+  "exec": "pavucontrol",
+  "generic": "Volume Control",
+  "id": "org.pulseaudio.pavucontrol",
+  "keywords": "pavucontrol PulseAudio Microphone Volume Fade Balance Headset Speakers Headphones Audio Mixer Output Input Devices Playback Recording System Sounds Sound Card Settings Preferences ",
+  "kinds": [
+   "audio",
+   "control",
+   "dialog",
+   "gtk",
+   "hardware",
+   "mixer",
+   "setting",
+   "video",
+   "volume",
+   "x",
+   "xfce"
+  ],
+  "name": "Volume Control"
+ },
+ {
+  "browser": false,
+  "exec": "remmina-file-wrapper %U",
+  "generic": "Remote Desktop Client",
+  "id": "org.remmina.Remmina",
+  "keywords": "remote desktop rdp vnc ssh spice ",
+  "kinds": [
+   "client",
+   "desktop",
+   "gnome",
+   "gtk",
+   "network",
+   "remote",
+   "setting",
+   "x"
+  ],
+  "name": "Remmina"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-panel --preferences",
+  "generic": "",
+  "id": "panel-preferences",
+  "keywords": "panels settings preferences taskbar autohide application menu start buttons launcher notification area status icons plugins ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Panel"
+ },
+ {
+  "browser": false,
+  "exec": "rustdesk %u",
+  "generic": "Remote Desktop",
+  "id": "rustdesk",
+  "keywords": "internet linux dart rust remote-control p2p teamviewer rust-lang rdp remote-desktop vnc ",
+  "kinds": [
+   "access",
+   "desktop",
+   "gtk",
+   "network",
+   "remote"
+  ],
+  "name": "RustDesk"
+ },
+ {
+  "browser": false,
+  "exec": "simple-scan",
+  "generic": "",
+  "id": "simple-scan",
+  "keywords": "scan scanner flatbed adf ",
+  "kinds": [
+   "gnome",
+   "graphic",
+   "gtk",
+   "scanning"
+  ],
+  "name": "Document Scanner"
+ },
+ {
+  "browser": false,
+  "exec": "system-config-printer",
+  "generic": "Printers",
+  "id": "system-config-printer",
+  "keywords": "Printer Queue Print Paper Ink Toner ",
+  "kinds": [
+   "gnome",
+   "gtk",
+   "hardware",
+   "panel",
+   "printer",
+   "printing",
+   "setting",
+   "system",
+   "unity",
+   "x"
+  ],
+  "name": "Printers"
+ },
+ {
+  "browser": false,
+  "exec": "systemsettings",
+  "generic": "System Settings",
+  "id": "systemsettings",
+  "keywords": "systemsettings",
+  "kinds": [
+   "kde",
+   "qt",
+   "setting",
+   "system"
+  ],
+  "name": "System Settings"
+ },
+ {
+  "browser": false,
+  "exec": "thunar --bulk-rename %F",
+  "generic": "Bulk Rename",
+  "id": "thunar-bulk-rename",
+  "keywords": "bulk renamer renaming thunar files folders directory directories ",
+  "kinds": [
+   "bulk",
+   "core",
+   "filesystem",
+   "gtk",
+   "rename",
+   "utility"
+  ],
+  "name": "Bulk Rename"
+ },
+ {
+  "browser": false,
+  "exec": "thunar-settings",
+  "generic": "",
+  "id": "thunar-settings",
+  "keywords": "thunar settings preferences configure thumbnails file size date format shortcuts pane tree view tabs ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Thunar Preferences"
+ },
+ {
+  "browser": false,
+  "exec": "thunar-volman-settings",
+  "generic": "",
+  "id": "thunar-volman-settings",
+  "keywords": "",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "hardware",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Removable Drives and Media"
+ },
+ {
+  "browser": false,
+  "exec": "thunar %U",
+  "generic": "File Manager",
+  "id": "thunar",
+  "keywords": "file manager explorer finder browser folders directory directories partitions drives network devices rename move copy delete permissions home trash ",
+  "kinds": [
+   "core",
+   "file",
+   "gtk",
+   "manager",
+   "system",
+   "tool"
+  ],
+  "name": "Thunar File Manager"
+ },
+ {
+  "browser": false,
+  "exec": "transmission-gtk %U",
+  "generic": "BitTorrent Client",
+  "id": "transmission-gtk",
+  "keywords": "torrents downloading uploading share sharing ",
+  "kinds": [
+   "bittorrent",
+   "client",
+   "file",
+   "gtk",
+   "network",
+   "p2p",
+   "transfer"
+  ],
+  "name": "Transmission"
+ },
+ {
+  "browser": false,
+  "exec": "/usr/bin/update-manager",
+  "generic": "Software Updates",
+  "id": "update-manager",
+  "keywords": "",
+  "kinds": [
+   "setting",
+   "software",
+   "system",
+   "update"
+  ],
+  "name": "Software Updater"
+ },
+ {
+  "browser": false,
+  "exec": "usb-creator-gtk",
+  "generic": "Startup Disk Creator",
+  "id": "usb-creator-gtk",
+  "keywords": "",
+  "kinds": [
+   "creator",
+   "disk",
+   "gtk",
+   "hardware",
+   "setting",
+   "startup",
+   "system"
+  ],
+  "name": "Startup Disk Creator"
+ },
+ {
+  "browser": false,
+  "exec": "vim %F",
+  "generic": "Text Editor",
+  "id": "vim",
+  "keywords": "Text editor ",
+  "kinds": [
+   "editor",
+   "text",
+   "utility"
+  ],
+  "name": "Vim"
+ },
+ {
+  "browser": false,
+  "exec": "VirtualBox %U",
+  "generic": "Virtualization Software",
+  "id": "virtualbox",
+  "keywords": "virtualization ",
+  "kinds": [
+   "emulator",
+   "software",
+   "system",
+   "virtualization"
+  ],
+  "name": "Oracle VirtualBox"
+ },
+ {
+  "browser": false,
+  "exec": "xfdesktop-settings",
+  "generic": "",
+  "id": "xfce-backdrop-settings",
+  "keywords": "desktop background wallpaper settings xfce ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Desktop"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-display-settings",
+  "generic": "",
+  "id": "xfce-display-settings",
+  "keywords": "display settings screen resolution refresh rate rotation external projectors monitors LCD CRT HiDPI ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "hardware",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Display"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-keyboard-settings",
+  "generic": "",
+  "id": "xfce-keyboard-settings",
+  "keywords": "numlock keyboard layout shortcuts ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "hardware",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Keyboard"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-mouse-settings",
+  "generic": "",
+  "id": "xfce-mouse-settings",
+  "keywords": "settings buttons scroll direction pointer speed double click theme wheel ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "hardware",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Mouse and Touchpad"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-session-settings",
+  "generic": "",
+  "id": "xfce-session-settings",
+  "keywords": "session settings preferences manager startup login logout shutdown lock screen application autostart launch services daemon agent ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "setting",
+   "system",
+   "x",
+   "xfce"
+  ],
+  "name": "Session and Startup"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-settings-manager",
+  "generic": "",
+  "id": "xfce-settings-manager",
+  "keywords": "control panel center system settings personalize hardware ",
+  "kinds": [
+   "desktop",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Settings Manager"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-appearance-settings",
+  "generic": "",
+  "id": "xfce-ui-settings",
+  "keywords": "themes user interface styles icons fonts anti-aliasing hinting sub-pixel subpixel rendering ClearType DPI RGB BGR menu accelerators keyboard shortcuts event sounds window scaling HiDPI Retina display ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Appearance"
+ },
+ {
+  "browser": false,
+  "exec": "xfwm4-settings",
+  "generic": "",
+  "id": "xfce-wm-settings",
+  "keywords": "windows management settings preferences themes styles decorations title bar font buttons menu minimize maximize shade roll up layout keyboard shortcuts focus snapping screen workspaces edges corner hide content move resize moving resizing double click ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Window Manager"
+ },
+ {
+  "browser": false,
+  "exec": "xfwm4-tweaks-settings",
+  "generic": "",
+  "id": "xfce-wmtweaks-settings",
+  "keywords": "windows behavior settings preferences cycling cycle switching focus raises accessibility key dragging move moving hide frame title bar maximized tile screen edge hot corner snapping mouse wheel roll up workspaces placement compositor compositing enable disable shadows decorations opacity resize inactive preview compiz transitions ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Window Manager Tweaks"
+ },
+ {
+  "browser": false,
+  "exec": "xfwm4-workspace-settings",
+  "generic": "",
+  "id": "xfce-workspaces-settings",
+  "keywords": "workspaces settings preferences virtual desktops number windows screen margins ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Workspaces"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-about",
+  "generic": "",
+  "id": "xfce4-about",
+  "keywords": "",
+  "kinds": [
+   "toplevel",
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "About Xfce"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-accessibility-settings",
+  "generic": "",
+  "id": "xfce4-accessibility-settings",
+  "keywords": "assistive technologies keys sticky bounce emulation screen readers magnifiers a11y i18n l10n AT-SPI ATK impairment ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "setting",
+   "system",
+   "x",
+   "xfce"
+  ],
+  "name": "Accessibility"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-appfinder",
+  "generic": "",
+  "id": "xfce4-appfinder",
+  "keywords": "program applications bookmarks ",
+  "kinds": [
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "Application Finder"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-color-settings",
+  "generic": "",
+  "id": "xfce4-color-settings",
+  "keywords": "color settings management display monitors printers webcams scanners ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "hardware",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Color Profiles"
+ },
+ {
+  "browser": false,
+  "exec": "exo-open --launch FileManager %u",
+  "generic": "",
+  "id": "xfce4-file-manager",
+  "keywords": "file manager explorer browse filesystem directory folder xfce ",
+  "kinds": [
+   "toplevel",
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "File Manager"
+ },
+ {
+  "browser": false,
+  "exec": "exo-open --launch MailReader %u",
+  "generic": "",
+  "id": "xfce4-mail-reader",
+  "keywords": "email mail inbox message communication ",
+  "kinds": [
+   "network",
+   "toplevel",
+   "x",
+   "xfce"
+  ],
+  "name": "Mail Reader"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-mime-settings",
+  "generic": "",
+  "id": "xfce4-mime-settings",
+  "keywords": "file type extension association open with web browser mail reader file manager terminal emulator ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "setting",
+   "system",
+   "x",
+   "xfce"
+  ],
+  "name": "Default Applications"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-notifyd-config",
+  "generic": "",
+  "id": "xfce4-notifyd-config",
+  "keywords": "",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "personal",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Notifications"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-appfinder --collapsed",
+  "generic": "",
+  "id": "xfce4-run",
+  "keywords": "run command application program finder search launcher everything spotlight sherlock applesearch unity dash krunner synapse ulauncher launchy gnome do pie apwal recoll alfred quicksilver tracker beagle kupfer ",
+  "kinds": [
+   "toplevel",
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "Run Program..."
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-session-logout",
+  "generic": "",
+  "id": "xfce4-session-logout",
+  "keywords": "logout exit quit shutdown ",
+  "kinds": [
+   "system",
+   "toplevel",
+   "x",
+   "xfce"
+  ],
+  "name": "Log Out"
+ },
+ {
+  "browser": false,
+  "exec": "xfce4-settings-editor",
+  "generic": "",
+  "id": "xfce4-settings-editor",
+  "keywords": "registry regedit configuration file ",
+  "kinds": [
+   "desktop",
+   "dialog",
+   "gtk",
+   "setting",
+   "x",
+   "xfce"
+  ],
+  "name": "Settings Editor"
+ },
+ {
+  "browser": false,
+  "exec": "exo-open --launch TerminalEmulator",
+  "generic": "",
+  "id": "xfce4-terminal-emulator",
+  "keywords": "terminal command line shell console xfce ",
+  "kinds": [
+   "toplevel",
+   "utility",
+   "x",
+   "xfce"
+  ],
+  "name": "Terminal Emulator"
+ },
+ {
+  "browser": false,
+  "exec": "exo-open --launch WebBrowser %u",
+  "generic": "",
+  "id": "xfce4-web-browser",
+  "keywords": "internet web browser surf explore xfce ",
+  "kinds": [
+   "network",
+   "toplevel",
+   "x",
+   "xfce"
+  ],
+  "name": "Web Browser"
+ },
+ {
+  "browser": false,
+  "exec": "zynaddsubfx -I alsa -O alsa",
+  "generic": "",
+  "id": "zynaddsubfx-alsa",
+  "keywords": "audio sound alsa midi synth synthesizer ",
+  "kinds": [
+   "audio",
+   "video"
+  ],
+  "name": "ZynAddSubFX - Alsa"
+ },
+ {
+  "browser": false,
+  "exec": "zynaddsubfx -I jack -O jack-multi",
+  "generic": "",
+  "id": "zynaddsubfx-jack-multi",
+  "keywords": "audio sound jack midi synth synthesizer ",
+  "kinds": [
+   "audio",
+   "video"
+  ],
+  "name": "ZynAddSubFX - Jack (multi channel)"
+ },
+ {
+  "browser": false,
+  "exec": "zynaddsubfx -I jack -O jack",
+  "generic": "",
+  "id": "zynaddsubfx-jack",
+  "keywords": "audio sound jack midi synth synthesizer ",
+  "kinds": [
+   "audio",
+   "video"
+  ],
+  "name": "ZynAddSubFX - Jack"
+ },
+ {
+  "browser": false,
+  "exec": "zynaddsubfx -I OSS -O OSS",
+  "generic": "",
+  "id": "zynaddsubfx-oss",
+  "keywords": "audio sound alsa midi synth synthesizer ",
+  "kinds": [
+   "audio",
+   "video"
+  ],
+  "name": "ZynAddSubFX - OSS"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/android-studio %f",
+  "generic": "",
+  "id": "android-studio_android-studio",
+  "keywords": "",
+  "kinds": [
+   "development",
+   "ide"
+  ],
+  "name": "Android Studio"
+ },
+ {
+  "browser": true,
+  "exec": "/snap/bin/brave %U",
+  "generic": "Web Browser",
+  "id": "brave_brave",
+  "keywords": "",
+  "kinds": [
+   "browser",
+   "network",
+   "web"
+  ],
+  "name": "Brave Web Browser"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/code --force-user-env %F",
+  "generic": "Text Editor",
+  "id": "code_code",
+  "keywords": "vscode ",
+  "kinds": [
+   "development",
+   "editor",
+   "ide",
+   "text"
+  ],
+  "name": "Visual Studio Code"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/desktop-security-center %U",
+  "generic": "",
+  "id": "desktop-security-center_desktop-security-center",
+  "keywords": "Ubuntu Permissions Snaps Security Pro ",
+  "kinds": [
+   "permission",
+   "security",
+   "setting",
+   "system",
+   "utility"
+  ],
+  "name": "Security Center"
+ },
+ {
+  "browser": true,
+  "exec": "/snap/bin/firefox %u",
+  "generic": "Web Browser",
+  "id": "firefox_firefox",
+  "keywords": "Internet WWW Browser Web Explorer ",
+  "kinds": [
+   "browser",
+   "gnome",
+   "gtk",
+   "network",
+   "web"
+  ],
+  "name": "Firefox"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/firmware-updater",
+  "generic": "",
+  "id": "firmware-updater_firmware-updater",
+  "keywords": "firmware ",
+  "kinds": [
+   "system"
+  ],
+  "name": "Firmware Updater"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/intellij-idea-community %f",
+  "generic": "",
+  "id": "intellij-idea-community_intellij-idea-community",
+  "keywords": "",
+  "kinds": [
+   "development",
+   "ide"
+  ],
+  "name": "IntelliJ IDEA"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/mysql-workbench-community %f",
+  "generic": "",
+  "id": "mysql-workbench-community_mysql-workbench-community",
+  "keywords": "",
+  "kinds": [
+   "database",
+   "development",
+   "gtk"
+  ],
+  "name": "MySQL Workbench"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/postman %U",
+  "generic": "",
+  "id": "postman_postman",
+  "keywords": "",
+  "kinds": [
+   "utility"
+  ],
+  "name": "Postman"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/snap-store %U",
+  "generic": "",
+  "id": "snap-store_snap-store",
+  "keywords": "Ubuntu Applications Apps Store Software Snaps ",
+  "kinds": [
+   "management",
+   "manager",
+   "network",
+   "package",
+   "setting",
+   "software",
+   "system",
+   "utility"
+  ],
+  "name": "App Center"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/spotify %U",
+  "generic": "Music Player",
+  "id": "spotify_spotify",
+  "keywords": "",
+  "kinds": [
+   "audio",
+   "music",
+   "player",
+   "video"
+  ],
+  "name": "Spotify"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/thunderbird %u",
+  "generic": "Mail Client",
+  "id": "thunderbird_thunderbird",
+  "keywords": "Email E-mail Newsgroup Feed RSS",
+  "kinds": [
+   "application",
+   "client",
+   "email",
+   "mail",
+   "network"
+  ],
+  "name": "Thunderbird Mail"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/vlc --started-from-file %U",
+  "generic": "Media player",
+  "id": "vlc_vlc",
+  "keywords": "Player Capture DVD Audio Video Server Broadcast ",
+  "kinds": [
+   "audio",
+   "media",
+   "player",
+   "recorder",
+   "video"
+  ],
+  "name": "VLC media player"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/wps-office-all-lang-no-internet.et %U",
+  "generic": "WPS Spreadsheets",
+  "id": "wps-office-all-lang-no-internet_et",
+  "keywords": "",
+  "kinds": [
+   "office",
+   "qt",
+   "spreadsheet",
+   "wps"
+  ],
+  "name": "WPS Spreadsheets"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/wps-office-all-lang-no-internet.wpp %U",
+  "generic": "WPS Presentation",
+  "id": "wps-office-all-lang-no-internet_wpp",
+  "keywords": "",
+  "kinds": [
+   "office",
+   "presentation",
+   "qt",
+   "wps"
+  ],
+  "name": "WPS Presentation"
+ },
+ {
+  "browser": false,
+  "exec": "/snap/bin/wps-office-all-lang-no-internet.wps %U",
+  "generic": "WPS Writer",
+  "id": "wps-office-all-lang-no-internet_wps",
+  "keywords": "",
+  "kinds": [
+   "office",
+   "processor",
+   "qt",
+   "word",
+   "wps",
+   "writer"
+  ],
+  "name": "WPS Writer"
+ }
+]

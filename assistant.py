@@ -1,9 +1,10 @@
-"""Offline assistant brain (bite-sized: Needle ~120 MB + optional gemma3:270m).
+"""The assistant's brain: turns one spoken sentence into an action or an answer.
 
 Routing, fastest first:
   1. Instant path: the command clearly matches one action (trigger words) -> run it directly, no model.
   2. Needle (26M): ambiguous commands, or open/search when the name can't be parsed.
-  3. Tiny LLM (gemma3:270m via Ollama): questions and chat. Set NEEDLE_LLM="" to disable.
+  3. Local LLM (LLM_MODEL via Ollama): questions and chat. Set NEEDLE_LLM="" to disable.
+  4. Optional agent CLI (NEEDLE_AGENT_CLI): plans shell commands for anything else; they run after a "yes".
 
 Every system change goes through sh() or launch(), so tests can fake them all.
 Run typed mode:  needle assistant.py
@@ -47,7 +48,7 @@ SNAP_LEAKS = ("GTK_PATH", "GTK_EXE_PREFIX", "GTK_IM_MODULE_FILE", "GIO_MODULE_DI
 # Spoken shortcuts for sites whose address isn't simply <name>.com. Any other "open <name>" that isn't an
 # installed app opens https://<name>.com.
 SITES = {"youtube": "youtube.com", "gmail": "mail.google.com", "google": "google.com",
-         "github": "github.com", "chatgpt": "chatgpt.com", "whatsapp": "web.whatsapp.com",
+         "github": "github.com", "whatsapp": "web.whatsapp.com",
          "linkedin": "linkedin.com", "reddit": "reddit.com"}
 
 TRIGGERS = {
@@ -1497,7 +1498,11 @@ def answer(text):
 
 # ---------- "do anything": a brain proposes shell commands, you approve, Needle runs them ----------
 
-AGENT_MODEL = "haiku"
+# The optional "do anything" agent: a coding-agent command-line program, set per machine (not in the repo).
+# NEEDLE_AGENT_CLI: its path (a glob is fine, the newest match wins). Unset = the feature is off.
+# NEEDLE_AGENT_MODEL: model name passed to it with --model (unset = its default).
+AGENT_CLI = os.environ.get("NEEDLE_AGENT_CLI", "")
+AGENT_MODEL = os.environ.get("NEEDLE_AGENT_MODEL", "")
 AGENT_PROMPT = ('You are the brain of Needle, a hands-free voice assistant on the user\'s Ubuntu laptop (GNOME, Wayland). '
                 'The request was spoken and transcribed, so it may contain mishearings. You may read files and run '
                 'read-only commands to investigate, but you cannot change anything yourself. Reply with ONE line of '
@@ -1663,9 +1668,9 @@ on_sentence = None                   # the voice loop sets this to speak an answ
 
 
 def agent_binary():
-    """The agent's command-line program: the newest one bundled with the VS Code extension, else on PATH."""
-    found = glob.glob(os.path.expanduser("~/.vscode/extensions/anthropic.claude-code-*/resources/native-binary/claude"))
-    return max(found, key=os.path.getmtime) if found else shutil.which("claude")
+    """The agent's command-line program from NEEDLE_AGENT_CLI (newest match of a glob), or None."""
+    found = glob.glob(os.path.expanduser(AGENT_CLI)) if AGENT_CLI else []
+    return max(found, key=os.path.getmtime) if found else (shutil.which(AGENT_CLI) if AGENT_CLI else None)
 
 
 def run_agent(request):
@@ -1675,7 +1680,8 @@ def run_agent(request):
     if not binary:
         return None
     cmd = [binary, "-p", request, "--output-format", "json", "--no-session-persistence", "--strict-mcp-config",
-           "--model", AGENT_MODEL, "--system-prompt", AGENT_PROMPT, "--permission-mode", "manual",
+           *(["--model", AGENT_MODEL] if AGENT_MODEL else []), "--system-prompt", AGENT_PROMPT,
+           "--permission-mode", "manual",
            "--setting-sources", "local",        # skip personal plugins/hooks: measured 8/8 correct vs 5/8 with them
            "--allowedTools", *AGENT_READ_ONLY]
     try:
