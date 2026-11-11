@@ -40,7 +40,7 @@ Internally the project is called **Needle**, after the small tool-calling model 
 | **Keyboard and mouse** | "type hello world", "press enter", "copy", "paste", "new tab", "close tab", "scroll down", "click", "right click" |
 | **Timers and info** | "set a timer for 25 minutes", "what time is it", "what's the battery", "what is 15 percent of 200" |
 | **Questions** | "what is the capital of Japan?", "how do I take a screenshot on Ubuntu?" (answered by a local model on the laptop) |
-| **Anything else on Linux** | "rename the photos in Downloads by date", "install VLC": it says what it will do, shows the exact commands, and runs them only after you say **"yes"** (requires [Claude Code](https://claude.com/claude-code), see below) |
+| **Anything else on Linux** | "rename the photos in Downloads by date", "install VLC": it says what it will do, shows the exact commands, and runs them only after you say **"yes"** (needs the optional cloud agent, see Requirements) |
 
 It understands natural, imperfect speech. Names are matched against what is actually on your machine: installed apps, saved Wi-Fi networks and paired Bluetooth devices. So "connect to cms headphone" still finds "CMF Neckband Pro". When more than one thing matches, it asks "Which one?", and you can answer by name, "the second one" or "cancel".
 
@@ -57,7 +57,7 @@ Chains work too: "open brave and search for lofi music" opens one new tab in Bra
                               |
      router (assistant.py): rules handle most commands instantly, no AI involved
        |                  |                      |                         |
-  built-in action    Needle 26M model     local LLM (Ollama,         Claude Code (optional):
+  built-in action    Needle 26M model     local LLM (Ollama,         cloud agent (optional):
   (apps, Wi-Fi,      picks an action      Qwen3 4B): questions        plans shell commands,
    media, keys...)   for odd phrasing      and chat                    runs them only after "yes"
        \__________________|______________________|_________________________/
@@ -71,7 +71,7 @@ Chains work too: "open brave and search for lofi music" opens one new tab in Bra
 | Speech-to-text | Google's web speech service, `en-IN` and `en-US` alternatives, the best command fit wins | Google |
 | Commands | rule-based router plus [Cactus Needle](https://huggingface.co/Cactus-Compute/needle3) (26M parameters) for ambiguous phrasing | laptop |
 | Questions | [Ollama](https://ollama.com) with `qwen3:4b-instruct-2507-q4_K_M`, answers spoken sentence by sentence | laptop |
-| Changes to the machine | [Claude Code](https://claude.com/claude-code) in read-only mode proposes commands; Bro runs them after a spoken "yes" | Anthropic (optional) |
+| Changes to the machine | a coding-agent CLI in read-only mode proposes commands; Bro runs them after a spoken "yes" | cloud (optional) |
 | Voice | [Piper](https://github.com/OHF-Voice/piper1-gpl) `en_US-lessac-medium` | laptop |
 | Keyboard and mouse | the desktop's RemoteDesktop portal (no root, one-time permission prompt) | laptop |
 | Top-bar button | StatusNotifierItem over D-Bus (the same mechanism as CopyQ's or Slack's icon) | laptop |
@@ -86,7 +86,7 @@ Chains work too: "open brave and search for lofi music" opens one new tab in Bra
 - **Hands-free is opt-in.** Tick "Hands-free" in the button's menu to have it listen continuously for "Hey Jarvis". The wake word is detected on the laptop; nothing is sent anywhere until you say it.
 - **Sent to Google:** the audio of each command you give, for speech-to-text, over HTTPS. Nothing is stored on disk.
 - **Stays on the laptop:** questions and chat (local Ollama model), the wake word, the voice, and all built-in actions.
-- **Sent to Anthropic, only if you use it:** requests to change the machine ("rename my photos..."), handled by Claude Code.
+- **Sent to the cloud agent, only if you use it:** requests to change the machine ("rename my photos...").
 - **Never the earphone mic.** Bro always records from the laptop's built-in mic, so Bluetooth earphones stay in music quality instead of switching to call mode.
 
 ## Requirements
@@ -96,7 +96,7 @@ Chains work too: "open brave and search for lofi music" opens one new tab in Bra
 - **Python 3.12+**. Tested on 3.14.
 - **Internet** for speech-to-text.
 - **[Ollama](https://ollama.com)**, for answering questions. Optional: without it Bro still runs every command.
-- **[Claude Code](https://claude.com/claude-code)**, logged in, for "do anything" requests. Optional: without it those requests get "I can't do that locally yet".
+- **A coding-agent CLI**, logged in, for "do anything" requests: see `agent_binary()` and `AGENT_MODEL` in `assistant.py`. Optional: without it those requests get "I can't do that locally yet".
 - **About 4 GB of free disk space** for the models, and **about 3 GB of free RAM** while the question model is loaded.
 
 ## Install

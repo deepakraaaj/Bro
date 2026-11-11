@@ -1661,13 +1661,13 @@ on_sentence = None                   # the voice loop sets this to speak an answ
 
 
 def agent_binary():
-    """Claude Code's command-line program: the newest one bundled with the VS Code extension, else on PATH."""
+    """The agent's command-line program: the newest one bundled with the VS Code extension, else on PATH."""
     found = glob.glob(os.path.expanduser("~/.vscode/extensions/anthropic.claude-code-*/resources/native-binary/claude"))
     return max(found, key=os.path.getmtime) if found else shutil.which("claude")
 
 
 def run_agent(request):
-    """Ask the brain (Claude Code, look-only: its permission system blocks every write) and return its final
+    """Ask the brain (the agent CLI, look-only: its permission system blocks every write) and return its final
     text; None if it isn't installed or failed. Tests replace this."""
     binary = agent_binary()
     if not binary:
